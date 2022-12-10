@@ -1,0 +1,129 @@
+/*##################### Clock ####################*/
+
+.clock-container {
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.clockBody {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 1rem #1d1baf;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.clockBody::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hours {
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-90deg);
+  transform-origin: 0%;
+  transition-timing-function: cubic-bezier(0, 1.95, 1, 0.42);
+}
+
+.minutes {
+  position: absolute;
+  height: 3px;
+  width: 85px;
+  background-color: rgb(255, 0, 0, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-90deg);
+  transform-origin: 0%;
+  transition-timing-function: cubic-bezier(0, 1.95, 1, 0.42);
+}
+
+.seconds {
+  position: absolute;
+  height: 3px;
+  width: 95px;
+  background-color: rgb(55, 0, 255, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-90deg);
+  transform-origin: 0%;
+  transition-timing-function: cubic-bezier(0, 1.95, 1, 0.42);
+}
+
+.timeDigits,
+.dateDigits {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.clock {
+  color: rgba(235, 6, 6, 0.8);
+  position: absolute;
+  left: 53%;
+  transform-origin: 115px;
+}
+
+.clockDigits {
+  transform: rotate(90deg);
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.num1 {
+  transform: rotate(30deg);
+}
+.num2 {
+  transform: rotate(60deg);
+}
+.num3 {
+  transform: rotate(90deg);
+}
+.num4 {
+  transform: rotate(120deg);
+}
+.num5 {
+  transform: rotate(150deg);
+}
+.num6 {
+  transform: rotate(180deg);
+}
+.num7 {
+  transform: rotate(210deg);
+}
+.num8 {
+  transform: rotate(240deg);
+}
+.num9 {
+  transform: rotate(270deg);
+}
+.num10 {
+  transform: rotate(300deg);
+}
+.num11 {
+  transform: rotate(330deg);
+}
+.num12 {
+  transform: rotate(360deg);
+}

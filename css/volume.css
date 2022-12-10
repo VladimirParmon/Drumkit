@@ -1,0 +1,27 @@
+.volume {
+  background: linear-gradient(to right, #d08282 0%, #d10303 10%, #fff 10%, #fff 100%);
+  border: solid 2px #82cfd0;
+  border-radius: 8px;
+  height: 25px;
+  width: 75px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  transform: rotate(-90deg);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.volume::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 45%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: #434343;
+}
+
+.disabled {
+  opacity: 0;
+  pointer-events: none;
+}

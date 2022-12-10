@@ -1,0 +1,61 @@
+.piano {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  display: flex;
+  cursor: pointer;
+}
+
+.blackKeys .none {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.pianoKey {
+  width: 80px;
+  height: 270px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 0px 0px 12px 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  transform-origin: center top;
+  font-family: "Press Start 2P";
+  color: #ffffff;
+  padding-top: 30%;
+}
+
+.sharp {
+  width: 54px;
+  height: 170px;
+  background-color: rgb(126, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 0px 0px 9px 9px;
+  top: 0;
+  pointer-events: auto;
+  margin-right: 26px;
+  margin-top: -78px;
+  transform-origin: center top;
+  padding-top: 0;
+}
+
+.whiteKeys {
+  z-index: 4;
+}
+
+.blackKeys {
+  margin-left: -595px;
+  height: max-content;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.pianoKey:hover {
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.pianoKey:active {
+  transform: scale(1.1);
+}

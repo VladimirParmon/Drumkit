@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drumkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+    <link rel="stylesheet" href="./css/piano.css" />
+    <link rel="stylesheet" href="./css/volume.css" />
+    <link rel="stylesheet" href="./css/memeButtons.css" />
+  </head>
+  <body>
+    <span class="sorry">Sorry, mobile devices and lower resolutions are not supported</span>
+    <div class="sliderContainer">
+      <div class="slider">
+        <div class="normal">
+          <!--######################### Clock ###########################-->
+          <div class="clock-container">
+            <div class="clockBody">
+              <div class="hours"></div>
+              <div class="minutes"></div>
+              <div class="seconds"></div>
+              <div class="clockDigits">
+                <div class="clock num1"><div style="transform: rotate(240deg)">1</div></div>
+                <div class="clock num2"><div style="transform: rotate(210deg)">2</div></div>
+                <div class="clock num3"><div style="transform: rotate(180deg)">3</div></div>
+                <div class="clock num4"><div style="transform: rotate(150deg)">4</div></div>
+                <div class="clock num5"><div style="transform: rotate(120deg)">5</div></div>
+                <div class="clock num6"><div style="transform: rotate(90deg)">6</div></div>
+                <div class="clock num7"><div style="transform: rotate(60deg)">7</div></div>
+                <div class="clock num8"><div style="transform: rotate(30deg)">8</div></div>
+                <div class="clock num9"><div>9</div></div>
+                <div class="clock num10"><div style="transform: rotate(-30deg)">10</div></div>
+                <div class="clock num11"><div style="transform: rotate(-60deg)">11</div></div>
+                <div class="clock num12"><div style="transform: rotate(-90deg)">12</div></div>
+              </div>
+            </div>
+            <div class="timeDigits"></div>
+            <div class="dateDigits"></div>
+          </div>
+          <!--######################### /Clock ###########################-->
+
+          <div class="piano">
+            <div class="whiteKeys">
+              <button class="pianoKey" id="piano-1">Z</button>
+              <button class="pianoKey" id="piano-2">X</button>
+              <button class="pianoKey" id="piano-3">C</button>
+              <button class="pianoKey" id="piano-4">B</button>
+              <button class="pianoKey" id="piano-5">N</button>
+              <button class="pianoKey" id="piano-6">M</button>
+              <button class="pianoKey" id="piano-7">,</button>
+            </div>
+            <div class="blackKeys">
+              <button class="pianoKey sharp" id="piano-8">S</button>
+              <button class="pianoKey sharp" id="piano-9">D</button>
+              <button class="pianoKey sharp none"></button>
+              <button class="pianoKey sharp" id="piano-10">G</button>
+              <button class="pianoKey sharp" id="piano-11">H</button>
+              <button class="pianoKey sharp" id="piano-12">J</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gachimuchi">
+          <video autoplay loop id="ricardo">
+            <source src="assets/videos/video.mp4" />
+          </video>
+
+          <div class="buttonsContainer">
+            <div class="flex-item button" id="meme-13">
+              <span>A</span>
+              <span class="smallText">AAAHHh</span>
+            </div>
+            <div class="flex-item button" id="meme-8">
+              <span>S</span>
+              <span class="smallText">So deep</span>
+            </div>
+            <div class="flex-item button" id="meme-9">
+              <span>D</span>
+              <span class="smallText">The lash</span>
+            </div>
+            <div class="flex-item button" id="meme-14">
+              <span>F</span>
+              <span class="smallText">Nice</span>
+            </div>
+            <div class="flex-item button" id="meme-10">
+              <span>G</span>
+              <span class="smallText">My shoulder</span>
+            </div>
+            <div class="flex-item button" id="meme-11">
+              <span>H</span>
+              <span class="smallText">Ahh</span>
+            </div>
+            <div class="flex-item button" id="meme-12">
+              <span>J</span>
+              <span class="smallText">Ohh</span>
+            </div>
+            <div class="flex-item button" id="meme-15">
+              <span>K</span>
+              <span class="smallText">Please do</span>
+            </div>
+            <div class="flex-item button" id="meme-16">
+              <span>L</span>
+              <span class="smallText">Please do it too</span>
+            </div>
+            <div class="flex-item button" id="meme-17">
+              <span>;</span>
+              <span class="smallText">Turns me on</span>
+            </div>
+            <div class="flex-item button" id="meme-18">
+              <span>'</span>
+              <span class="smallText">Power, son</span>
+            </div>
+            <div class="flex-item button" id="meme-1">
+              <span>Z</span>
+              <span class="smallText">Ass We Can</span>
+            </div>
+            <div class="flex-item button" id="meme-2">
+              <span>X</span>
+              <span class="smallText">Hey you!</span>
+            </div>
+            <div class="flex-item button" id="meme-3">
+              <span>C</span>
+              <span class="smallText">Next door</span>
+            </div>
+            <div class="flex-item button" id="meme-19">
+              <span>V</span>
+              <span class="smallText">WOO</span>
+            </div>
+            <div class="flex-item button" id="meme-4">
+              <span>B</span>
+              <span class="smallText">What the hell?!</span>
+            </div>
+            <div class="flex-item button" id="meme-5">
+              <span>N</span>
+              <span class="smallText">Deep. Dark.</span>
+            </div>
+            <div class="flex-item button" id="meme-6">
+              <span>M</span>
+              <span class="smallText">$300</span>
+            </div>
+            <div class="flex-item button" id="meme-7">
+              <span>,</span>
+              <span class="smallText">I bet he does</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="controls">
+        <button id="transitionButton">>Spicy stuff</button>
+        <input
+          class="volume disabled"
+          type="range"
+          value="10"
+          min="0"
+          max="100"
+          step="1"
+          id="volume-control"
+        />
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
